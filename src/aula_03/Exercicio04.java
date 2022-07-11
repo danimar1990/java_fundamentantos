@@ -16,7 +16,7 @@ public class Exercicio04 {
 		numero2 = scanner.nextInt();
 		scanner.close();
 
-		if(numero1 > numero2) {
+		if (numero1 > numero2) {
 			maior = numero1;
 		} else {
 			maior = numero2;

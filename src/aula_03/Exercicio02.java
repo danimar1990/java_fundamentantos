@@ -18,5 +18,5 @@ public class Exercicio02 {
 		consumo = distancia / litros;
 		System.out.println("O consumo médio do veículo é de " + consumo + " km/l!");
 	}
-	
+
 }

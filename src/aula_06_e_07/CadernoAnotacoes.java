@@ -3,11 +3,13 @@ package aula_06_e_07;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import helpers.Helpers;
+
 public class CadernoAnotacoes<E> {
 	String anotacao;
 	static String confirmaExclusao = "n";
 	static int anotacoes;
-	
+
 	public static ArrayList<String> notas = new ArrayList<>();
 	private static String anotacao1;
 	private static String anotacao2;
@@ -16,13 +18,13 @@ public class CadernoAnotacoes<E> {
 	public static void adicionarAnotacao(String anotacao1, String anotacao2, String anotacao3) {
 		System.out.println("-----------[ Adicionando anotação ]-----------");
 		System.out.println("Digite a sua primeira anotação: ");
-		anotacao1 = Main.sc.next();
+		anotacao1 = Principal.sc.next();
 		notas.add(anotacao1);
 		System.out.println("Digite a sua segunda anotação: ");
-		anotacao2 = Main.sc.next();
+		anotacao2 = Principal.sc.next();
 		notas.add(anotacao2);
 		System.out.println("Digite a sua terceira anotação: ");
-		anotacao3 = Main.sc.next();
+		anotacao3 = Principal.sc.next();
 		notas.add(anotacao3);
 		System.out.println("Anotações adicionadas com sucesso!");
 	}
@@ -30,7 +32,7 @@ public class CadernoAnotacoes<E> {
 	public static void visualizarAnotacoes() {
 		System.out.println("Lista de anotações:");
 		if (notas.isEmpty()) {
-			
+
 			System.out.println("Não existem anotações cadastradas!");
 		} else {
 			notas.forEach(nota -> {
@@ -41,7 +43,7 @@ public class CadernoAnotacoes<E> {
 
 	public static void apagarAnotacoes(String confirmaExclusao) {
 		System.out.println("Tem certeza que deseja apagar todos os registros? s/n");
-		confirmaExclusao = Main.sc.next();
+		confirmaExclusao = Principal.sc.next();
 		if (confirmaExclusao.equals("s")) {
 			notas.clear();
 			System.out.println("Anotações apagadas com sucesso!");
@@ -52,7 +54,7 @@ public class CadernoAnotacoes<E> {
 
 	public static void menu() {
 		int opcao = 0;
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		while (opcao != 4) {
@@ -82,7 +84,7 @@ public class CadernoAnotacoes<E> {
 			case 4:
 				System.out.println("Finalizando caderno de anotações!");
 				System.out.println("Voltando ao menu principal..");
-				Main.menu();
+				Principal.menu();
 				break;
 			default:
 				System.out.println("Opção inválida!");

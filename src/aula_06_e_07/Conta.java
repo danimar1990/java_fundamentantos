@@ -2,6 +2,8 @@ package aula_06_e_07;
 
 import java.util.Scanner;
 
+import helpers.Helpers;
+
 public class Conta {
 	public String numeroConta;
 	public String tipoConta;
@@ -160,7 +162,7 @@ public class Conta {
 				case 2:
 					System.out.println("Finalizando sessão!");
 					System.out.println("Voltando ao menu principal..");
-					Main.menu();
+					Principal.menu();
 					break;
 				default:
 					System.out.println("Opção inválida!");
@@ -187,7 +189,7 @@ public class Conta {
 				case 5:
 					System.out.println("Finalizando sessão!");
 					System.out.println("Voltando ao menu principal..");
-					Main.menu();
+					Principal.menu();
 					break;
 				default:
 					System.out.println("Opção inválida!");

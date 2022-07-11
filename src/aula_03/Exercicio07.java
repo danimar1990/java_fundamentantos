@@ -16,5 +16,5 @@ public class Exercicio07 {
 		System.out.println("Serão necessários " + anos + " anos para Zé se tornar maior do que Chico!");
 
 	}
-	
+
 }

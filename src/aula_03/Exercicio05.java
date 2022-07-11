@@ -12,16 +12,15 @@ public class Exercicio05 {
 		System.out.println("Digite seu nome:");
 		nome = scanner.next();
 		System.out.println("Digite sua idade:");
-		idade= scanner.nextInt();
+		idade = scanner.nextInt();
 		scanner.close();
-		
-		if(idade < 16) {
+
+		if (idade < 16) {
 			System.out.println(nome + ", você não é de maior, portanto não pode votar!");
-		}
-		else {
+		} else {
 			System.out.println(nome + ", você está apto a votar!");
 		}
 
 	}
-	
+
 }
