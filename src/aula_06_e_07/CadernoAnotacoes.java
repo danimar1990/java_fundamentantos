@@ -18,13 +18,13 @@ public class CadernoAnotacoes<E> {
 	public static void adicionarAnotacao(String anotacao1, String anotacao2, String anotacao3) {
 		System.out.println("-----------[ Adicionando anotação ]-----------");
 		System.out.println("Digite a sua primeira anotação: ");
-		anotacao1 = Principal.sc.next();
+		anotacao1 = Teste.sc.next();
 		notas.add(anotacao1);
 		System.out.println("Digite a sua segunda anotação: ");
-		anotacao2 = Principal.sc.next();
+		anotacao2 = Teste.sc.next();
 		notas.add(anotacao2);
 		System.out.println("Digite a sua terceira anotação: ");
-		anotacao3 = Principal.sc.next();
+		anotacao3 = Teste.sc.next();
 		notas.add(anotacao3);
 		System.out.println("Anotações adicionadas com sucesso!");
 	}
@@ -43,7 +43,7 @@ public class CadernoAnotacoes<E> {
 
 	public static void apagarAnotacoes(String confirmaExclusao) {
 		System.out.println("Tem certeza que deseja apagar todos os registros? s/n");
-		confirmaExclusao = Principal.sc.next();
+		confirmaExclusao = Teste.sc.next();
 		if (confirmaExclusao.equals("s")) {
 			notas.clear();
 			System.out.println("Anotações apagadas com sucesso!");
@@ -64,7 +64,7 @@ public class CadernoAnotacoes<E> {
 			System.out.println("3 - Apagar anotações");
 			System.out.println();
 			System.out.println("4 - Finalizar");
-			Helpers.divisormaior();
+			Helpers.divisorMaior();
 			System.out.print("Digite uma opção do menu acima: ");
 			opcao = sc.nextInt();
 
@@ -84,7 +84,7 @@ public class CadernoAnotacoes<E> {
 			case 4:
 				System.out.println("Finalizando caderno de anotações!");
 				System.out.println("Voltando ao menu principal..");
-				Principal.menu();
+				Teste.menu();
 				break;
 			default:
 				System.out.println("Opção inválida!");

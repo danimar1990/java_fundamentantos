@@ -14,7 +14,7 @@ public class Helpers {
 		System.out.println("----------------------");
 	}
 	
-	public static void divisormaior() {
+	public static void divisorMaior() {
 		System.out.println("----------------------------------------------");
 	}
 

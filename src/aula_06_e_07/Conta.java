@@ -148,7 +148,7 @@ public class Conta {
 				System.out.println("4 - Sacar");
 				System.out.println();
 				System.out.println("5 - Finalizar");
-				Helpers.divisormaior();
+				Helpers.divisorMaior();
 				System.out.print("Digite uma opção do menu acima: ");
 				opcao = sc.nextInt();
 			}
@@ -162,7 +162,7 @@ public class Conta {
 				case 2:
 					System.out.println("Finalizando sessão!");
 					System.out.println("Voltando ao menu principal..");
-					Principal.menu();
+					Teste.menu();
 					break;
 				default:
 					System.out.println("Opção inválida!");
@@ -189,7 +189,7 @@ public class Conta {
 				case 5:
 					System.out.println("Finalizando sessão!");
 					System.out.println("Voltando ao menu principal..");
-					Principal.menu();
+					Teste.menu();
 					break;
 				default:
 					System.out.println("Opção inválida!");
