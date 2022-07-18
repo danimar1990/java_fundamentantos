@@ -3,7 +3,7 @@ package aula_15.sobreposicao_classe;
 public abstract class Conta {
 	double taxa;
 
-	// Obriga a implementação do método nas subclasses
+	// Obriga a implementaÃ§Ã£o do mÃ©todo nas subclasses
 	public abstract void solicitarDocumentos();
 
 	public void calcularTaxa() {

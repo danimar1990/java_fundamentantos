@@ -12,7 +12,7 @@ public class Cd extends Produto {
 
 	@Override
 	public String toString() {
-		return "\n====[ CD ]====\n" + super.toString() + "\nNúmero: " + numero + "\nFaixas: " + faixas;
+		return "\n====[ CD ]====\n" + super.toString() + "\nNÃºmero: " + numero + "\nFaixas: " + faixas;
 	}
 
 	public int getNumero() {

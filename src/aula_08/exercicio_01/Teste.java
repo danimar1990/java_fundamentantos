@@ -19,7 +19,7 @@ public class Teste {
 		retorno = pessoa.toString();
 		System.out.println(retorno);
 		Helpers.divisorMaior();
-		System.out.println("Utilizando método calcularIdade():");
+		System.out.println("Utilizando mÂ´wtodo calcularIdade():");
 		pessoa.calcularIdade();
 	}
 

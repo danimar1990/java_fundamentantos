@@ -17,11 +17,11 @@ public class Teste {
 		tabuleiro.setTamanhoTabuleiro("40x40");
 		tabuleiro.setQuantPecas(60);
 
-		// MÉTODOS DA SUPERCLASSE
+		// Mï¿½TODOS DA SUPERCLASSE
 		tabuleiro.infoJogoTabuleiro();
 		tabuleiro.jogar();
 
-		// MÉTODOS DA SUBCLASSE
+		// Mï¿½TODOS DA SUBCLASSE
 		tabuleiro.setupTabuleiro();
 		tabuleiro.moverPeca();
 
@@ -31,7 +31,7 @@ public class Teste {
 		carta.setDistribuidora("Paper Games");
 		carta.setNrJogadores(8);
 		carta.setFaixaEtaria(6);
-		carta.setTamanhoCartas("Padrão");
+		carta.setTamanhoCartas("PadrÃ£o");
 		carta.setQuantCartas(60);
 		carta.infoJogoCartas();
 		carta.comprarCarta();
@@ -41,7 +41,7 @@ public class Teste {
 		Helpers.divisorMaior();
 
 		dado.setNome("Bang Dice Game");
-		dado.setDistribuidora("Galápagos Jogos");
+		dado.setDistribuidora("GalÃ¡pagos Jogos");
 		dado.setNrJogadores(8);
 		dado.setFaixaEtaria(12);
 		dado.setTipoDado("d6");

@@ -5,10 +5,10 @@ public class Teste {
 		ContaCPF cpf = new ContaCPF();
 		ContaCNPJ cnpj = new ContaCNPJ();
 
-		// POLIMORFISMO DE SOBREPOSI«√O
-		// N„o pode realizar alteraÁıes nos par‚metros
-		// Os mÈtodos n„o podem coexistir. Um mÈtodo sobrepıe o outro
-		// ImplementaÁ„o na subclasse de um mÈtodo da superclasse.
+		// POLIMORFISMO DE SOBREPOSI√á√ÉO
+		// N√£o pode realizar altera√ß√µes nos par√¢metros
+		// Os m√©todos n√£o podem coexistir. Um m√©todo sobrep√µe o outro
+		// Implementa√ß√£o na subclasse de um m√©todo da superclasse.
 		cpf.calcularTaxa();
 		cnpj.calcularTaxa();
 	}

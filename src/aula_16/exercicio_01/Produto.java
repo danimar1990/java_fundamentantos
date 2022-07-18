@@ -12,7 +12,7 @@ public abstract class Produto {
 
 	@Override
 	public String toString() {
-		return "Nome: " + nome + "\nPreço: " + preco;
+		return "Nome: " + nome + "\nPreÃ§o: " + preco;
 	}
 
 	public String getNome() {

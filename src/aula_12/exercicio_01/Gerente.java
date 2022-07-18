@@ -11,7 +11,7 @@ public class Gerente extends Empregado {
 
 	@Override
 	public String toString() {
-		return "Nome = " + super.getNome() + "\nSal·rio = " + salario + "\nDepartamento = " + departamento;
+		return "Nome = " + super.getNome() + "\nSal√°rio = " + salario + "\nDepartamento = " + departamento;
 	}
 
 	public String getDepartamento() {

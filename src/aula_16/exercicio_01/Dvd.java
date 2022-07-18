@@ -10,7 +10,7 @@ public class Dvd extends Produto {
 
 	@Override
 	public String toString() {
-		return "\n====[ DVD ]====\n" + super.toString() + "\nDuração: " + duracao;
+		return "\n====[ DVD ]====\n" + super.toString() + "\nDuraÃ§Ã£o: " + duracao;
 	}
 
 	public double getDuracao() {

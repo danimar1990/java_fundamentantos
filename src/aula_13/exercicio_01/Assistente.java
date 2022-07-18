@@ -11,7 +11,7 @@ public class Assistente extends Funcionario {
 	@Override
 	public void exibeDados() {
 		super.exibeDados();
-		System.out.println("Matrícula: " + matricula);
+		System.out.println("MatrÃ­cula: " + matricula);
 	}
 
 	public int getMatricula() {

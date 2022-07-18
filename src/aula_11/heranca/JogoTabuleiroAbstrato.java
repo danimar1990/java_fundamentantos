@@ -5,7 +5,7 @@ public class JogoTabuleiroAbstrato extends JogoAbstrato {
 	// SOBRESCRITA
 	@Override
 	public void infoJogo() {
-		System.out.println("Estou mostrando as informações da classe filha");
+		System.out.println("Estou mostrando as informaÃ§Ãµes da classe filha");
 	}
 
 }

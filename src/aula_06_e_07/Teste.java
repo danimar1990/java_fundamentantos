@@ -18,15 +18,15 @@ public class Teste {
 		while (opcao != 7) {
 			System.out.println("-------------[ MENU DO SISTEMA ]--------------");
 			System.out.println("1 - Calculadora");
-			System.out.println("2 - Média do aluno");
-			System.out.println("3 - Conta bancária");
-			System.out.println("4 - Manutenção veículo");
-			System.out.println("5 - Anotações");
+			System.out.println("2 - MÃ©dia do aluno");
+			System.out.println("3 - Conta bancÃ¡ria");
+			System.out.println("4 - ManutenÃ§Ã£o veÃ­culo");
+			System.out.println("5 - AnotaÃ§Ãµes");
 			System.out.println("6 - Produtos");
 			System.out.println();
 			System.out.println("7 - Finalizar");
 			Helpers.divisorMaior();
-			System.out.print("Digite uma opção do menu acima: ");
+			System.out.print("Digite uma opÃ§Ã£o do menu acima: ");
 			opcao = sc.nextInt();
 
 			switch (opcao) {
@@ -59,7 +59,7 @@ public class Teste {
 				System.exit(0);
 				break;
 			default:
-				System.out.println("Opção inválida!");
+				System.out.println("OpÃ§Ã£o invÃ¡lida!");
 				break;
 			}
 		}
@@ -69,9 +69,9 @@ public class Teste {
 		Calculadora calc = new Calculadora();
 		System.out.println();
 		System.out.println("---------------[ Calculadora ]----------------");
-		System.out.print("Informe o 1º número: ");
+		System.out.print("Informe o 1Âº nÃºmero: ");
 		calc.n1 = sc.nextDouble();
-		System.out.print("Informe o 2º número: ");
+		System.out.print("Informe o 2Âº nÃºmero: ");
 		calc.n2 = sc.nextDouble();
 
 		System.out.println();
@@ -88,16 +88,16 @@ public class Teste {
 		Aluno alc = new Aluno();
 
 		System.out.println();
-		System.out.println("--------------[ Média do aluno ]--------------");
+		System.out.println("--------------[ MÃ©dia do aluno ]--------------");
 		System.out.print("Nome: ");
 		alc.nome = sc.next();
 		System.out.print("Idade: ");
 		alc.idade = sc.nextInt();
-		System.out.print("1ª nota: ");
+		System.out.print("1Âª nota: ");
 		alc.n1 = sc.nextDouble();
-		System.out.print("2ª nota: ");
+		System.out.print("2Âª nota: ");
 		alc.n2 = sc.nextDouble();
-		System.out.print("3ª nota: ");
+		System.out.print("3Âª nota: ");
 		alc.n3 = sc.nextDouble();
 
 		System.out.println();
@@ -114,8 +114,8 @@ public class Teste {
 	private static void exercicio4() {
 		Veiculo vcl = new Veiculo();
 
-		System.out.println("------------[ Manutenção veículo ]------------");
-		System.out.println("Preencha as informações");
+		System.out.println("------------[ ManutenÃ§Ã£o veÃ­culo ]------------");
+		System.out.println("Preencha as informaÃ§Ãµes");
 		System.out.print("Modelo: ");
 		vcl.modelo = sc.next();
 		System.out.print("Ano: ");
@@ -127,7 +127,7 @@ public class Teste {
 		System.out.println();
 		vcl.verificarManutencao();
 		vcl.exibirCor();
-		System.out.print("Informe a nova cor do veículo: ");
+		System.out.print("Informe a nova cor do veÃ­culo: ");
 		String novaCor = sc.next();
 		vcl.mudarCor(novaCor);
 	}

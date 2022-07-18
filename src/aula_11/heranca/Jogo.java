@@ -9,12 +9,12 @@ public class Jogo {
 	public void infoJogo() {
 		System.out.println("Nome: " + this.getNome());
 		System.out.println("Distribuidora: " + this.getDistribuidora());
-		System.out.println("Número de Jogadores: " + this.getNrJogadores());
-		System.out.println("Faixa Etária: " + this.getFaixaEtaria());
+		System.out.println("NÃºmero de jogadores: " + this.getNrJogadores());
+		System.out.println("Faixa etÃ¡ria: " + this.getFaixaEtaria());
 	}
 
 	public void jogar() {
-		System.out.println("Você está jogando!");
+		System.out.println("VocÃª estÃ¡ jogando!");
 	}
 
 	public String getNome() {

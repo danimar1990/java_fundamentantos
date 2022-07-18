@@ -25,7 +25,7 @@ public class Mamifero extends Animal {
 		System.out.println("Cor: " + this.getCor());
 		System.out.println("Ambiente: " + this.getAmbiente());
 		System.out.println("Comprimento: " + this.getComprimento() + "cm");
-		System.out.println("Número de patas: " + this.getNroPatas());
+		System.out.println("NÃºmero de patas: " + this.getNroPatas());
 		System.out.println("Velocidade: " + this.getVelocidade());
 		System.out.println("Alimento: " + this.alimento);
 	}

@@ -24,14 +24,14 @@ public class Veiculo {
 		if (quilometragem < 25000) {
 			System.out.println("Tudo ok!" );
 		} else if (quilometragem >= 25000 && quilometragem < 75000) {
-			System.out.println("Realizar revisão parcial!");
+			System.out.println("Realizar revisÃ£o parcial!");
 		} else {
-			System.out.println("Realizar revisão completa!");
+			System.out.println("Realizar revisÃ£o completa!");
 		}
 	}
 
 	public void exibirCor() {
-		System.out.println("Cor de fábrica: " + cor);
+		System.out.println("Cor de fÃ¡brica: " + cor);
 	}
 	
 	public void mudarCor(String novaCor) {

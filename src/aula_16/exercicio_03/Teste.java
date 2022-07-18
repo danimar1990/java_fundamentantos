@@ -6,9 +6,9 @@ public class Teste {
 		Comissionado c = new Comissionado("Danimar", "Varisa", "076.001.989-40", 80000, 12);
 		Horista h = new Horista("Danimar", "Varisa", "076.001.989-40", 120, 40);
 
-		System.out.println("O salário do Assalariado é: R$" + a.vencimento() + "/mês");
-		System.out.println("O salário do Comissionado é: R$" + c.vencimento() + "/mês");
-		System.out.println("O salário do Horista é: R$" + h.vencimento() + "/mês");
+		System.out.println("O salÃ¡rio do Assalariado Ã©: R$" + a.vencimento() + "/mÃªs");
+		System.out.println("O salÃ¡rio do Comissionado Ã©: R$" + c.vencimento() + "/mÃªs");
+		System.out.println("O salÃ¡rio do Horista Ã©: R$" + h.vencimento() + "/mÃªs");
 
 	}
 }

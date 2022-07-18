@@ -21,7 +21,7 @@ public abstract class Funcionario {
 
 	public void exibeDados() {
 		System.out.println("Nome: " + this.getNome());
-		System.out.println("Sal·rio mensal: R$" + new DecimalFormat("#,##0.00").format(this.salario));
+		System.out.println("Sal√°rio mensal: R$" + new DecimalFormat("#,##0.00").format(this.salario));
 		System.out.println("Ganho anual: R$" + new DecimalFormat("#,##0.00").format(this.ganhoAnual()));
 	}
 

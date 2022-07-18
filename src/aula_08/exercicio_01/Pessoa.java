@@ -18,7 +18,7 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Utilizadno método toString():\nPessoa [nome=" + nome + ", anoNasc=" + anoNasc + ", altura=" + altura + "]";
+		return "Utilizadno mÃ©todo toString():\nPessoa [nome=" + nome + ", anoNasc=" + anoNasc + ", altura=" + altura + "]";
 	}
 
 	public void exibirPessoa() {

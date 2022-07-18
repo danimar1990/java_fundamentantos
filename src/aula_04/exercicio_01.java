@@ -15,7 +15,7 @@ public class exercicio_01 {
 			int contador;
 
 			for (contador = 1; contador <= 5; contador++) {
-				System.out.print("Digite um número: ");
+				System.out.print("Digite um nÃºmero: ");
 				numeros.add(sc.nextInt());
 				
 			}
@@ -28,7 +28,7 @@ public class exercicio_01 {
 			System.out.println("");
 			Collections.reverse(numeros);
 			Helpers.divisorMaior();
-			System.out.println("Impressão da matriz em ordem inversa:");
+			System.out.println("ImpressÃ£o da matriz em ordem inversa:");
 			numeros.forEach(numero -> {
 				System.out.print(numero + " ");
 			});

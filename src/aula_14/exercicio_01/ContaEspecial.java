@@ -14,7 +14,7 @@ public class ContaEspecial extends ContaBancaria {
 	@Override
 	public void sacar(Double limite, Double valor) {
 		if (this.getSaldo() < limite) {
-			System.err.println("O valor do saque é maior que o limite da conta.");
+			System.err.println("O valor do saque Ã© maior que o limite da conta.");
 		} else {
 			this.setSaldo(this.getSaldo() - valor);
 			System.out.println("Saque: R$" + valor);
@@ -24,7 +24,7 @@ public class ContaEspecial extends ContaBancaria {
 
 	@Override
 	public String toString() {
-		return "Cliente: " + this.getCliente() + "\nNúmero da conta: " + this.getNumConta() + "\nSaldo: R$"
+		return "Cliente: " + this.getCliente() + "\nNÃºmero da conta: " + this.getNumConta() + "\nSaldo: R$"
 				+ this.getSaldo() + "\nLimite: R$" + this.getLimite();
 	}
 

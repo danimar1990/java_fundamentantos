@@ -13,25 +13,25 @@ public class Calculadora {
 	}
 
 	public void somar(double n1, double n2) {
-		System.out.println("Método somar()");
+		System.out.println("MÃ©todo somar()");
 		double soma = n1 + n2;
 		System.out.println(n1 + " + " + n2 + " = " + soma);
 	}
 
 	public void subtrair(double n1, double n2) {
-		System.out.println("Método subtrair()");
+		System.out.println("MÃ©todo subtrair()");
 		double subtracao = n1 - n2;
 		System.out.println(n1 + " - " + n2 + " = " + subtracao);
 	}
 
 	public void multiplicar(double n1, double n2) {
-		System.out.println("Método multiplicar()");
+		System.out.println("MÃ©todo multiplicar()");
 		double multiplicacao = n1 * n2;
 		System.out.println(n1 + " * " + n2 + " = " + multiplicacao);
 	}
 
 	public void dividir(double n1, double n2) {
-		System.out.println("Método dividir()");
+		System.out.println("MÃ©todo dividir()");
 		double divisao = n1 / n2;
 		System.out.println(n1 + " / " + n2 + " = " + divisao);
 	}

@@ -16,24 +16,24 @@ public class CadernoAnotacoes<E> {
 	private static String anotacao3;
 
 	public static void adicionarAnotacao(String anotacao1, String anotacao2, String anotacao3) {
-		System.out.println("-----------[ Adicionando anotação ]-----------");
-		System.out.println("Digite a sua primeira anotação: ");
+		System.out.println("-----------[ Adicionando anotaÃ§Ã£o ]-----------");
+		System.out.println("Digite a sua primeira anotaÃ§Ã£o: ");
 		anotacao1 = Teste.sc.next();
 		notas.add(anotacao1);
-		System.out.println("Digite a sua segunda anotação: ");
+		System.out.println("Digite a sua segunda anotaÃ§Ã£o: ");
 		anotacao2 = Teste.sc.next();
 		notas.add(anotacao2);
-		System.out.println("Digite a sua terceira anotação: ");
+		System.out.println("Digite a sua terceira anotaÃ§Ã£o: ");
 		anotacao3 = Teste.sc.next();
 		notas.add(anotacao3);
-		System.out.println("Anotações adicionadas com sucesso!");
+		System.out.println("AnotaÃ§Ãµes adicionadas com sucesso!");
 	}
 
 	public static void visualizarAnotacoes() {
-		System.out.println("Lista de anotações:");
+		System.out.println("Lista de anotaÃ§Ãµes:");
 		if (notas.isEmpty()) {
 
-			System.out.println("Não existem anotações cadastradas!");
+			System.out.println("NÃ£o existem anotaÃ§Ãµes cadastradas!");
 		} else {
 			notas.forEach(nota -> {
 				System.out.println(" -> " + nota);
@@ -46,9 +46,9 @@ public class CadernoAnotacoes<E> {
 		confirmaExclusao = Teste.sc.next();
 		if (confirmaExclusao.equals("s")) {
 			notas.clear();
-			System.out.println("Anotações apagadas com sucesso!");
+			System.out.println("AnotaÃ§Ãµes apagadas com sucesso!");
 		} else {
-			System.out.println("Operação cancelada!");
+			System.out.println("OperaÃ§Ã£o cancelada!");
 		}
 	}
 
@@ -58,14 +58,14 @@ public class CadernoAnotacoes<E> {
 		Scanner sc = new Scanner(System.in);
 
 		while (opcao != 4) {
-			System.out.println("-----------[ CADERNO DE ANOTAÇÕES ]-----------");
-			System.out.println("1 - Adicionar anotação");
-			System.out.println("2 - Visualizar anotações");
-			System.out.println("3 - Apagar anotações");
+			System.out.println("-----------[ CADERNO DE ANOTAÃ‡Ã•ES ]-----------");
+			System.out.println("1 - Adicionar anotaÃ§Ã£o");
+			System.out.println("2 - Visualizar anotaÃ§Ãµes");
+			System.out.println("3 - Apagar anotaÃ§Ãµes");
 			System.out.println();
 			System.out.println("4 - Finalizar");
 			Helpers.divisorMaior();
-			System.out.print("Digite uma opção do menu acima: ");
+			System.out.print("Digite uma opÃ§Ã£o do menu acima: ");
 			opcao = sc.nextInt();
 
 			switch (opcao) {
@@ -82,12 +82,12 @@ public class CadernoAnotacoes<E> {
 				Helpers.sleep();
 				break;
 			case 4:
-				System.out.println("Finalizando caderno de anotações!");
+				System.out.println("Finalizando caderno de anotaÃ§Ãµes!");
 				System.out.println("Voltando ao menu principal..");
 				Teste.menu();
 				break;
 			default:
-				System.out.println("Opção inválida!");
+				System.out.println("OpÃ§Ã£o invÃ¡lida!");
 				break;
 			}
 		}

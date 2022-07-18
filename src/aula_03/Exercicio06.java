@@ -16,9 +16,9 @@ public class Exercicio06 {
 		scanner.close();
 
 		if (idade >= 18 && idade <= 67) {
-			System.out.println(nome + ", você está apto a doar sangue!");
+			System.out.println(nome + ", vocÃª estÃ¡ apto a doar sangue!");
 		} else {
-			System.out.println(nome + ", você não pode doar sangue!");
+			System.out.println(nome + ", vocÃª nÃ£o pode doar sangue!");
 		}
 
 	}

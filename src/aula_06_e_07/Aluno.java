@@ -26,11 +26,11 @@ public class Aluno {
 
 	public void calcularMedia(double n1, double n2, double n3) {
 		media = (n1 + n2 + n3) / 3;
-		System.out.println("A média do aluno é " + media);
+		System.out.println("A mÃ©dia do aluno Ã© " + media);
 	}
 
 	public void verificarAprovacao(double media) {
-		System.out.print("Situação: ");
+		System.out.print("SituaÃ§Ã£o: ");
 		if (media < 5) {
 			System.out.println("Reprovado");
 		} else if (media >= 5 && media < 7) {

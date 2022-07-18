@@ -21,32 +21,32 @@ public class AssinaturaMetodo {
 	}
 
 	public void calcular() {
-		System.out.println("Método sem parâmetro!");
+		System.out.println("MÃ©todo sem parÃ¢metro!");
 
 	}
 
 	public void calcular(double n1, float n2) {
-		System.out.println("2 parâmetros, 1 double e 1 float");
+		System.out.println("2 parÃ¢metros, 1 double e 1 float");
 	}
 
 	public void calcular(float n1) {
-		System.out.println("1 parâmetro, 1 float");
+		System.out.println("1 parÃ¢metro, 1 float");
 	}
 
 	public void calcular(float n1, float n2) {
-		System.out.println("2 parâmetros, 2 float");
+		System.out.println("2 parÃ¢metros, 2 float");
 	}
 
 	public void calcular(double n1, double n2, String s1, String s2) {
-		System.out.println("4 parâmetros, 2 double, 2 String");
+		System.out.println("4 parÃ¢metros, 2 double, 2 String");
 	}
 
 	public void calcularSalario() {
-		System.out.println("Salário permanece o mesmo: " + salario);
+		System.out.println("SalÃ¡rio permanece o mesmo: " + salario);
 	}
 
 	public void calcularSalario(double aumento) {
 		salario += aumento;
-		System.out.println("Salário teve um aumento: " + salario);
+		System.out.println("SalÃ¡rio teve um aumento: " + salario);
 	}
 }

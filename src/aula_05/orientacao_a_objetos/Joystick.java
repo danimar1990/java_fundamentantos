@@ -28,16 +28,16 @@ public class Joystick {
 		} else if (porcentagemBateria <= 50) {
 			System.out.println("Status: Bateria com metade da capacidade");
 		} else {
-			System.out.println("Status: Bateria em nível normal");
+			System.out.println("Status: Bateria em nÃ­vel normal");
 		}
 	}
 
 	void conectar() {
-		System.out.println("Joystick " + modelo + " está conectado ao vídeo game!");
+		System.out.println("Joystick " + modelo + " estÃ¡ conectado ao vÃ­deo game!");
 	}
 
 	void recarregar() {
-		System.out.println("Joystick " + modelo + " está carregando...");
+		System.out.println("Joystick " + modelo + " estÃ¡ carregando...");
 	}
 
 }

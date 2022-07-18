@@ -25,9 +25,9 @@ public class Peixe extends Animal {
 		System.out.println("Cor: " + this.getCor());
 		System.out.println("Ambiente: " + this.getAmbiente());
 		System.out.println("Comprimento: " + this.getComprimento() + "m");
-		System.out.println("Número de patas: " + this.getNroPatas());
+		System.out.println("NÃºmero de patas: " + this.getNroPatas());
 		System.out.println("Velocidade: " + this.getVelocidade());
-		System.out.println("Característica: " + this.caracteristica);
+		System.out.println("CaracterÃ­stica: " + this.caracteristica);
 	}
 
 	public String getCaracteristica() {

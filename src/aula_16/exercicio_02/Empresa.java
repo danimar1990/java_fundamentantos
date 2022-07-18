@@ -4,9 +4,9 @@ public abstract class Empresa {
 	private String funcionario;
 	private int codigo;
 	private int escolaridade;
-	// 0 - n„o estudou;
-	// 1 - ensino b·sico;
-	// 2 - ensino mÈdio;
+	// 0 - n√£o estudou;
+	// 1 - ensino b√°sico;
+	// 2 - ensino m√©dio;
 	// 3 - ensino superior;
 
 	public Empresa(String funcionario, int codigo, int escolaridade) {

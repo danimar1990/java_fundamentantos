@@ -23,7 +23,7 @@ public class Exercicio08 {
 			potencia *= x;
 		}
 
-		System.out.println("No valor de X se elevado a Y ser· " + potencia);
+		System.out.println("No valor de X se elevado a Y ser√° " + potencia);
 	}
 
 }

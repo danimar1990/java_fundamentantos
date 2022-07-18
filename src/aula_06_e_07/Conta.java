@@ -90,14 +90,14 @@ public class Conta {
 		System.out.print("Informe a quantia que deseja depositar: R$");
 		valorDeposito = sc.nextInt();
 		saldo += valorDeposito;
-		System.out.println("DepÛsito de R$" + valorDeposito + " realizado com sucesso!");
+		System.out.println("Dep√≥sito de R$" + valorDeposito + " realizado com sucesso!");
 	}
 
 	public void sacar(double valorSaque) {
 		System.out.print("Informe a quantia que deseja sacar: R$");
 		valorSaque = sc.nextInt();
 		if (valorSaque > saldo) {
-			System.out.println("O valor informado para saque È maior que o saldo total da conta!");
+			System.out.println("O valor informado para saque √© maior que o saldo total da conta!");
 		} else {
 			this.saldo -= valorSaque;
 			System.out.println("Saque de R$" + valorSaque + " realizado com sucesso!");
@@ -118,14 +118,14 @@ public class Conta {
 	}
 
 	public void consultarDadosBancarios() {
-		System.out.println("Ol· " + titularConta + ", seja bem vindo(a)!");
+		System.out.println("Ol√° " + titularConta + ", seja bem vindo(a)!");
 		System.out.println("Tipo: " + tipoConta);
-		System.out.println("N˙mero: " + numeroConta);
+		System.out.println("N√∫mero: " + numeroConta);
 	}
 
 	public void consultarSaldo(Double saldo, Double limite) {
-		System.out.println("Seu saldo È de:  R$" + saldo);
-		System.out.println("Seu limite È de: R$" + calcularLimite(limite));
+		System.out.println("Seu saldo √© de:  R$" + saldo);
+		System.out.println("Seu limite √© de: R$" + calcularLimite(limite));
 		Double saldoTotal =  saldo + calcularLimite(limite);
 		System.out.println("Saldo + limite:  R$" + saldoTotal);
 	}
@@ -134,12 +134,12 @@ public class Conta {
 		int opcao = 0;
 
 		while (opcao != 6) {
-			System.out.println("--------------[ CONTA BANC¡RIA ]--------------");
+			System.out.println("--------------[ CONTA BANC√ÅRIA ]--------------");
 			if (numeroConta == null) {
 				System.out.println("1 - Abrir conta");
 				System.out.println();
 				System.out.println("2 - Finalizar");
-				System.out.print("Digite uma opÁ„o do menu acima: ");
+				System.out.print("Digite uma op√ß√£o do menu acima: ");
 				opcao = sc.nextInt();
 			} else {
 				System.out.println("1 - Meus dados");
@@ -149,7 +149,7 @@ public class Conta {
 				System.out.println();
 				System.out.println("5 - Finalizar");
 				Helpers.divisorMaior();
-				System.out.print("Digite uma opÁ„o do menu acima: ");
+				System.out.print("Digite uma op√ß√£o do menu acima: ");
 				opcao = sc.nextInt();
 			}
 
@@ -160,12 +160,12 @@ public class Conta {
 					Helpers.sleep();
 					break;
 				case 2:
-					System.out.println("Finalizando sess„o!");
+					System.out.println("Finalizando sess√£o!");
 					System.out.println("Voltando ao menu principal..");
 					Teste.menu();
 					break;
 				default:
-					System.out.println("OpÁ„o inv·lida!");
+					System.out.println("Op√ß√£o inv√°lida!");
 					break;
 				}
 			} else {
@@ -187,12 +187,12 @@ public class Conta {
 					Helpers.sleep();
 					break;
 				case 5:
-					System.out.println("Finalizando sess„o!");
+					System.out.println("Finalizando sess√£o!");
 					System.out.println("Voltando ao menu principal..");
 					Teste.menu();
 					break;
 				default:
-					System.out.println("OpÁ„o inv·lida!");
+					System.out.println("Op√ß√£o inv√°lida!");
 					break;
 				}
 			}

@@ -70,7 +70,7 @@ public class Elevador {
 			System.out.println("Pessoa pode entrar!");
 			qtdPessoas++;
 		} else {
-			System.out.println("O elevador j· est· lotado!");
+			System.out.println("O elevador est√° lotado!");
 		}
 	}
 
@@ -79,7 +79,7 @@ public class Elevador {
 			System.out.println("Pessoa pode sair!");
 			qtdPessoas--;
 		} else {
-			System.out.println("N„o h· pessoas no elevador!");
+			System.out.println("N√£o h√° pessoas no elevador!");
 		}
 	}
 
@@ -88,7 +88,7 @@ public class Elevador {
 			System.out.println("O elevador pode subir!");
 			andar++;
 		} else {
-			System.out.println("O elevador j· est· no ˙ltimo andar!");
+			System.out.println("O elevador j√° est√° no √∫ltimo andar!");
 		}
 	}
 
@@ -97,7 +97,7 @@ public class Elevador {
 			System.out.println("O elevador pode descer!");
 			andar--;
 		} else {
-			System.out.println("O elevador j· est· no tÈrreo!");
+			System.out.println("O elevador j√° est√° no t√©rreo!");
 		}
 	}
 }

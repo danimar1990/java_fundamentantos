@@ -13,12 +13,12 @@ public class exercicio_03 {
 			int contador;
 
 			for (contador = 1; contador <= 5; contador++) {
-				System.out.print("Digite um número: ");
+				System.out.print("Digite um nÃºmero: ");
 				numeros.add(sc.nextInt());
 			}
 
-			System.out.println("O maior valor da lista é: " + Collections.max(numeros));
-			System.out.println("O menor valor da lista é: " + Collections.min(numeros));
+			System.out.println("O maior valor da lista Ã©: " + Collections.max(numeros));
+			System.out.println("O menor valor da lista Ã©: " + Collections.min(numeros));
 		}
 	}
 

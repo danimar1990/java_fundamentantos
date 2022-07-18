@@ -9,13 +9,13 @@ public class JogoTabuleiro extends Jogo {
 	}
 
 	public void moverPeca() {
-		System.out.println("Peça movimentada!");
+		System.out.println("PeÃ§a movimentada!");
 	}
 
 	public void infoJogoTabuleiro() {
 		super.infoJogo();
 		System.out.println("Tamanho do Tabuleiro: " + this.getTamanhoTabuleiro());
-		System.out.println("Quantidade de Peças: " + this.getQuantPecas());
+		System.out.println("Quantidade de PeÃ§as: " + this.getQuantPecas());
 	}
 
 	public String getTamanhoTabuleiro() {

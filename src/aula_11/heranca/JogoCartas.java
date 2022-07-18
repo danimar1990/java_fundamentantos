@@ -19,7 +19,7 @@ public class JogoCartas extends Jogo {
 	public void infoJogoCartas() {
 		super.infoJogo();
 		System.out.println("Tamanho da carta: " + this.getTamanhoCartas());
-		System.out.println("Quantidade de Cartas: " + this.getQuantCartas());
+		System.out.println("Quantidade de cartas: " + this.getQuantCartas());
 	}
 
 	public String getTamanhoCartas() {

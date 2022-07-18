@@ -12,7 +12,7 @@ public class Teste {
 		double tamanhoBase, altura;
 
 		System.out.println("Escolha a forma que deseja calcular:");
-		System.out.println("1 - Quadrado\n2 - Ret‚ngulo\n3 - CÌrculo");
+		System.out.println("1 - Quadrado\n2 - Ret√¢ngulo\n3 - C√≠rculo");
 		Helpers.divisorMenor();
 		opcao = sc.nextInt();
 
@@ -36,7 +36,7 @@ public class Teste {
 			System.out.println(c.calcularArea());
 			break;
 		default:
-			System.out.println("OpÁ„o inv·lida!");
+			System.out.println("Op√ß√£o inv√°lida!");
 			break;
 		}
 		sc.close();

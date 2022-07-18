@@ -6,13 +6,13 @@ public abstract class JogoAbstrato {
 	private int nrJogadores;
 	private int faixaEtaria;
 
-	// MÉTODO ABSTRATO NÃO PODE SER IMPLEMENTADO NA CLASSE MÃE
-	// ELE OBRIGA QUE A CLASSE FILHA IMPLEMENTE O MÉTODO
+	// MÃ‰TODO ABSTRATO NÃƒO PODE SER IMPLEMENTADO NA CLASSE MÃƒE
+	// ELE OBRIGA QUE A CLASSE FILHA IMPLEMENTE O MÃ‰TODO
 	public abstract void infoJogo();
 
-	// IMPEDE QUE CLASSES FILHAS SOBRESCREVAM O MÉTODO
+	// IMPEDE QUE CLASSES FILHAS SOBRESCREVAM O MÃ‰TODO
 	public final void jogar() {
-		System.out.println("Você está jogando");
+		System.out.println("VocÃª estÃ¡ jogando");
 	}
 
 	public String getNome() {

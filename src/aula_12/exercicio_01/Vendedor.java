@@ -16,8 +16,8 @@ public class Vendedor extends Empregado {
 
 	@Override
 	public String toString() {
-		return "Nome = " + super.getNome() + "\nSal·rio sem comiss„o = " + salario + "\nSal·rio com comiss„o = "
-				+ this.calcularSalario() + "\nPercentual comiss„o = " + percentualComissao + "%";
+		return "Nome = " + super.getNome() + "\nSal√°rio sem comiss√£o = " + salario + "\nSal√°rio com comiss√£o = "
+				+ this.calcularSalario() + "\nPercentual comiss√£o = " + percentualComissao + "%";
 	}
 
 	public float getPercentualComissao() {

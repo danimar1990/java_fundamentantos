@@ -15,13 +15,13 @@ public class exercicio_02 {
 		int contador;
 
 		for (contador = 1; contador <= 5; contador++) {
-			System.out.print("Digite um número: ");
+			System.out.print("Digite um nÃºmero: ");
 			numeros.add(sc.nextInt());
 			sc.close();
 		}
 
 		for (contador = 1; contador <= 5; contador++) {
-			System.out.print("Digite um número: ");
+			System.out.print("Digite um nÃºmero: ");
 			numeros2.add(sc.nextInt());
 			sc.close();
 		}

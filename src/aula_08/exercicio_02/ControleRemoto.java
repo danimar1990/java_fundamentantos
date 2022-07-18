@@ -14,7 +14,7 @@ public class ControleRemoto {
 			volume++;
 			tv.setVolume(volume);
 		} else {
-			System.out.println("Você já está com o volume ao máximo!");
+			System.out.println("VocÃª jÃ¡ estÃ¡ com o volume ao mÃ¡ximo!");
 		}
 	}
 
@@ -24,7 +24,7 @@ public class ControleRemoto {
 			volume--;
 			tv.setVolume(volume);
 		} else {
-			System.out.println("Você já está com o volume no mínimo!");
+			System.out.println("VocÃª jÃ¡ estÃ¡ com o volume no mÃ­nimo!");
 		}
 	}
 
@@ -34,7 +34,7 @@ public class ControleRemoto {
 			canal++;
 			tv.setCanal(canal);
 		} else {
-			System.out.println("Você já está no último canal!");
+			System.out.println("VocÃª jÃ¡ estÃ¡ no Ãºltimo canal!");
 		}
 	}
 
@@ -44,7 +44,7 @@ public class ControleRemoto {
 			canal--;
 			tv.setCanal(canal);
 		} else {
-			System.out.println("Você já está no primeiro canal!");
+			System.out.println("VocÃª jÃ¡ estÃ¡ no primeiro canal!");
 		}
 	}
 
