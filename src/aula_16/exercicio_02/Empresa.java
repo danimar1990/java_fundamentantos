@@ -1,6 +1,6 @@
 package aula_16.exercicio_02;
 
-public abstract class Empresa {
+public class Empresa {
 	private String funcionario;
 	private int codigo;
 	private int escolaridade;
@@ -16,7 +16,13 @@ public abstract class Empresa {
 		this.escolaridade = escolaridade;
 	}
 
-	public abstract void getGrauEscolaridade(int escolaridade);
+	@Override
+	public String toString() {
+		return "Empresa [funcionario=" + funcionario + ", codigo=" + codigo + ", escolaridade=" + escolaridade + "]";
+	}
+
+	public void getGrauEscolaridade(int escolaridade) {
+	}
 
 	public String getFuncionario() {
 		return funcionario;

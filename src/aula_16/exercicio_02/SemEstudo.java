@@ -1,7 +1,7 @@
 package aula_16.exercicio_02;
 
 public class SemEstudo extends Empresa {
-	int ESCOLARIDADE = 0;
+	final int ESCOLARIDADE = 0;
 
 	public SemEstudo(String funcionario, int codigo, int escolaridade) {
 		super(funcionario, codigo, escolaridade);
