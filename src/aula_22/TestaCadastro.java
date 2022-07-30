@@ -1,14 +1,27 @@
 package aula_22;
 
 public class TestaCadastro {
-
 	public static void main(String[] args) {
-		CadastroPessoas pessoa1 = new CadastroPessoas();
-		CadastroPessoas pessoa2 = new CadastroPessoas();
-		CadastroPessoas pessoa3 = new CadastroPessoas();
+		CadastroPessoas cadastroPessoas = new CadastroPessoas();
 
-		pessoa1.cadastraPessoa("Danimar Henrique Varisa");
-		pessoa2.cadastraPessoa("Jaqueline Candiago de Oliveira");
-		pessoa3.cadastraPessoa("Diego de Melo Varisa");
+		Funcionario funcionario = new Funcionario();
+		funcionario.setNome("Diego");
+		funcionario.setSalario(12900);
+
+		Gerente gerente = new Gerente();
+		gerente.setNome("Jaqueline");
+		gerente.setSalario(12500);
+		gerente.setArea("Administradora");
+		
+		Cliente cliente = new Cliente();
+		cliente.setNome("Danimar Henrique Varisa");
+		cliente.setCodigo(12436);
+
+		cadastroPessoas.cadastraPessoa(funcionario);
+		cadastroPessoas.cadastraPessoa(gerente);
+		cadastroPessoas.cadastraPessoa(cliente);
+
+		cadastroPessoas.imprimeCadastro();
 	}
+
 }

@@ -3,25 +3,18 @@ package aula_22;
 public class Cliente extends Pessoa {
 	private int codigo;
 
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
-
-	public Cliente(int codigo) {
-		super();
-		this.codigo = codigo;
-	}
-
-	void imprimeDados() {
-		System.out.println(codigo);
+	@Override
+	public void imprimeDados() {
+		System.out.println("Nome: " + super.getNome());
+		System.out.println("Código: " + this.codigo);
 	}
 
 	public int getCodigo() {
 		return codigo;
 	}
 
-	public Cliente() {
-		super();
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 }

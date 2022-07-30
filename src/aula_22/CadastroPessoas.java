@@ -3,27 +3,18 @@ package aula_22;
 import java.util.ArrayList;
 
 public class CadastroPessoas {
-	private ArrayList<String> Pessoa = new ArrayList<>();
+	private ArrayList<Pessoa> listapessoas = new ArrayList<>();
 
-	public ArrayList<String> getPessoa() {
-		return Pessoa;
-	}
-
-	public void setPessoa(ArrayList<String> pessoa) {
-		Pessoa = pessoa;
-	}
-
-	public void cadastraPessoa(String pess) {
-		Pessoa.add(pess);
+	public void cadastraPessoa(Pessoa pessoa) {
+		listapessoas.add(pessoa);
 	}
 
 	public void imprimeCadastro() {
-		if (Pessoa.size() == 0) {
-			System.out.println("Lista vazia!");
-		} else {
-			Pessoa.forEach(anotacao -> {
-				System.out.println(Pessoa);
-			});
+		for (int i = 0; i < listapessoas.size(); i++) {
+			System.out.println("Pessoa: " + (i + 1));
+			listapessoas.get(i).imprimeDados();
+			System.out.println();
 		}
 	}
+
 }

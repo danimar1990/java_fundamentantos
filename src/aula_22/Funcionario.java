@@ -3,24 +3,14 @@ package aula_22;
 public class Funcionario extends Pessoa {
 	private float salario;
 
-	public Funcionario() {
-		super();
+	@Override
+	public void imprimeDados() {
+		System.out.println("Nome: " + super.getNome());
+		System.out.println("Salário: " + this.salario);
 	}
 
-	public Funcionario(float salario) {
-		super();
-		this.salario = salario;
-	}
-
-	void calculaImposto() {
-		float imposto;
-		imposto = (3 / 100);
-		salario = imposto * salario;
-
-	}
-
-	void imprimeDados() {
-		System.out.println("O valor do imposto a ser pago é de R$ " + salario);
+	public float calculaImposto() {
+		return (float) 0.03;
 	}
 
 	public float getSalario() {
@@ -29,11 +19,6 @@ public class Funcionario extends Pessoa {
 
 	public void setSalario(float salario) {
 		this.salario = salario;
-	}
-
-	@Override
-	public String toString() {
-		return "Funcionario [Salário: R$ " + salario + "]";
 	}
 
 }
