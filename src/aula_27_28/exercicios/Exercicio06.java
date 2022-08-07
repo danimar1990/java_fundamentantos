@@ -15,4 +15,13 @@ public class Exercicio06 {
 				+ "\n8 }";
 		return enunciado;
 	}
+	
+	public void teste() {
+		System.out.println("//Conversão implícita");
+		System.out.println("Linha 4: 10.0 / 8.0 = " + 10.0 / 8.0);
+		System.out.println();
+		System.out.println("//Conversão explícita");
+		System.out.println("Linha 5: (float) 10 / 8 = " + (float) 10 / 8);
+	}	
+	
 }

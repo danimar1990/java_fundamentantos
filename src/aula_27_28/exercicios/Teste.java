@@ -155,12 +155,15 @@ public class Teste {
 		System.out.println("----------------[Exercício 06]----------------");
 		System.out.println(exercicio06.getEnunciado());
 		Helpers.divisorMenor();
+		exercicio06.teste();
 	}
 
 	public static void exercicio07() {
 		Exercicio07 exercicio07 = new Exercicio07();
 		System.out.println("----------------[Exercício 07]----------------");
+		System.out.println(exercicio07.getEnunciado());
 		Helpers.divisorMenor();
+		exercicio07.getConstantes();
 	}
 
 	public static void exercicio08() {
