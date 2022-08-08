@@ -169,19 +169,25 @@ public class Teste {
 	public static void exercicio08() {
 		Exercicio08 exercicio08 = new Exercicio08();
 		System.out.println("----------------[Exercício 08]----------------");
+		System.out.println(exercicio08.getEnunciado());
 		Helpers.divisorMenor();
+		exercicio08.teste();
 	}
 
 	public static void exercicio09() {
 		Exercicio09 exercicio09 = new Exercicio09();
 		System.out.println("----------------[Exercício 09]----------------");
+		System.out.println(exercicio09.getEnunciado());
 		Helpers.divisorMenor();
+		exercicio09.teste();
 	}
 
 	public static void exercicio10() {
 		Exercicio10 exercicio10 = new Exercicio10();
 		System.out.println("----------------[Exercício 10]----------------");
+		System.out.println(exercicio10.getEnunciado());
 		Helpers.divisorMenor();
+		exercicio10.teste();
 	}
 
 	public static void exercicio11() {
