@@ -1,9 +1,9 @@
-package aula_31_32.exercicios;
+package aula_31.exercicios;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Exercicio05 {
+public class Exercicio04 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 
@@ -24,8 +24,6 @@ public class Exercicio05 {
 		} catch (Exception e) {
 			System.out.println("Erro capturado!");
 			System.out.println(e.getMessage());
-		} finally {
-			ler.close();
 		}
 	}
 }
