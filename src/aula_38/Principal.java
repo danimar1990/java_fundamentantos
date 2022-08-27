@@ -20,20 +20,22 @@ public class Principal {
 		ProdutoDAO dao = new ProdutoDAO();
 
 		// INÍCIO DE ADICIONAR PRODUTO
-		Produto rtx3090ti = new Produto(null, "RTX3090TI 24GB", Date.valueOf(LocalDate.now()), 5, new BigDecimal("20000.5"));
-		//dao.adicionar(rtx3090ti);
-		
-		Produto monitor = new Produto(null, "Monitor Asus Curvo HQ 34", Date.valueOf(LocalDate.now()), 5, new BigDecimal("3400"));
-		//dao.adicionar(monitor);
+		Produto rtx3090ti = new Produto(null, "RTX3090TI 24GB", Date.valueOf(LocalDate.now()), 5,
+				new BigDecimal("20000.5"));
+		// dao.adicionar(rtx3090ti);
+
+		Produto monitor = new Produto(null, "Monitor Asus Curvo HQ 34", Date.valueOf(LocalDate.now()), 5,
+				new BigDecimal("3400"));
+		// dao.adicionar(monitor);
 		// FIM DE ADICIONAR PRODUTO
-		
+
 		// INÍCIO DE ALTERAR PRODUTO
-		//monitor.setIdProd(3);
-		//dao.alterar(monitor);
+		// monitor.setIdProd(3);
+		// dao.alterar(monitor);
 		// FIM DE ALTERAR PRODUTO
-		
+
 		// INÍCIO DA EXCLUSÃO DE UM PRODUTO
-		dao.excluir(4);
+		//dao.excluir(4);
 		// FIM DA EXCLUSÃO DE UM PRODUTO
 
 		// INCÍCIO DA LISTAGEM DE PRODUTOS
@@ -50,9 +52,9 @@ public class Principal {
 			System.out.println("Preço........: " + fm.format(produto.getPreco()));
 		}
 		// FIM DA LISTAGEM DE PRODUTOS
-		
+
 		Helpers.divisorMaior();
-		
+
 		// INÍCIO DA BUSCA DO PRODUTO POR ID
 		Produto prod = dao.buscarPorId(1);
 		if (prod != null) {
