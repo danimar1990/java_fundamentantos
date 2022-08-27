@@ -9,6 +9,7 @@ import java.util.List;
 
 import aula_38.dao.ProdutoDAO;
 import aula_38.model.Produto;
+import helpers.Helpers;
 
 public class Principal {
 
@@ -50,9 +51,12 @@ public class Principal {
 		}
 		// FIM DA LISTAGEM DE PRODUTOS
 		
+		Helpers.divisorMaior();
+		
 		// INÍCIO DA BUSCA DO PRODUTO POR ID
 		Produto prod = dao.buscarPorId(1);
 		if (prod != null) {
+			System.out.println("Produto encontrado!");
 			System.out.println("ID...........: " + prod.getIdProd());
 			System.out.println("Nome.........: " + prod.getNomeProd());
 			System.out.println("Data cadastro: " + fd.format(prod.getDataCadastro()));
