@@ -18,7 +18,7 @@ public class FabricaConexao {
 			String senha = "";
 
 			conexao = DriverManager.getConnection(url, usuario, senha);
-			System.out.println("Conexão realizada com sucesso!");
+			// System.out.println("Conexão realizada com sucesso!");
 
 			return conexao;
 		} catch (SQLException e) {
@@ -30,7 +30,7 @@ public class FabricaConexao {
 		if (conexao != null) {
 			try {
 				conexao.close();
-				System.out.println("Conexão fechada com sucesso!");
+				// System.out.println("Conexão fechada com sucesso!");
 			} catch (SQLException e) {
 				throw new RuntimeException(e.getMessage());
 			}

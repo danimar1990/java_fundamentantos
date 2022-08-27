@@ -31,11 +31,11 @@ public class Principal {
 		//dao.alterar(monitor);
 		// FIM DE ALTERAR PRODUTO
 		
-		// INÍCIO DE EXCLUIR PRODUTO
+		// INÍCIO DA EXCLUSÃO DE UM PRODUTO
 		dao.excluir(4);
-		// FIM DE EXCLUIR PRODUTO
+		// FIM DA EXCLUSÃO DE UM PRODUTO
 
-		// INCÍCIO DE LISTAR PRODUTOS
+		// INCÍCIO DA LISTAGEM DE PRODUTOS
 		List<Produto> lista = dao.listarTodos();
 
 		System.out.println("Lista de produtos");
@@ -48,7 +48,20 @@ public class Principal {
 			System.out.println("Quantidade...: " + produto.getQuantidade());
 			System.out.println("Preço........: " + fm.format(produto.getPreco()));
 		}
-		// FIM DE LISTAR PRODUTOS
+		// FIM DA LISTAGEM DE PRODUTOS
+		
+		// INÍCIO DA BUSCA DO PRODUTO POR ID
+		Produto prod = dao.buscarPorId(1);
+		if (prod != null) {
+			System.out.println("ID...........: " + prod.getIdProd());
+			System.out.println("Nome.........: " + prod.getNomeProd());
+			System.out.println("Data cadastro: " + fd.format(prod.getDataCadastro()));
+			System.out.println("Quantidade...: " + prod.getQuantidade());
+			System.out.println("Preço........: " + fm.format(prod.getPreco()));
+		} else {
+			System.out.println("Produto não encontrado!");
+		}
+		// FIM DA BUSCA DO PRODUTO POR ID
 	}
 
 }

@@ -114,7 +114,34 @@ public class ProdutoDAO implements IProdutoDAO {
 
 	@Override
 	public Produto buscarPorId(Integer id) {
-		return null;
+		conexao = FabricaConexao.getConexao();
+
+		Produto p = null;
+
+		try {
+			String sql = "SELECT * FROM produto WHERE id_prod = ?";
+
+			PreparedStatement stmt = this.conexao.prepareStatement(sql);
+			stmt.setInt(1, id);
+
+			ResultSet rs = stmt.executeQuery();
+
+			if (rs.next()) {
+				p = new Produto();
+
+				p.setIdProd(rs.getInt("id_prod"));
+				p.setNomeProd(rs.getString("nome_prod"));
+				p.setDataCadastro(rs.getDate("data_cadastro"));
+				p.setQuantidade(rs.getInt("quantidade"));
+				p.setPreco(rs.getBigDecimal("preco"));
+			}
+		} catch (SQLException e) {
+			throw new RuntimeException(e.getMessage());
+		} finally {
+			FabricaConexao.fecharConexao();
+		}
+
+		return p;
 	}
 
 }
