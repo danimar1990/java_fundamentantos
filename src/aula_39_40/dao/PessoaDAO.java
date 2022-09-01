@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import aula_38.model.Produto;
+import aula_39_40.db.FabricaConexao;
 import aula_39_40.model.Pessoa;
-import db.FabricaConexao;
+
 
 public class PessoaDAO implements IPessoaDAO {
 
@@ -116,7 +116,7 @@ public class PessoaDAO implements IPessoaDAO {
 		Pessoa p = null;
 
 		try {
-			String sql = "SELECT * FROM produto WHERE id_prod = ?";
+			String sql = "SELECT * FROM pessoa WHERE id_pessoa = ?";
 
 			PreparedStatement stmt = this.conexao.prepareStatement(sql);
 			stmt.setInt(1, id);
